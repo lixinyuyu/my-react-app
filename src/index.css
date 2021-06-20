@@ -14,3 +14,8 @@ code {
 .color-text {
   color: skyblue;
 }
+
+.warpper-box {
+  border: 1px solid blue;
+  padding: 10px;
+}
