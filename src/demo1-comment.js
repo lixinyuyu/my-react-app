@@ -1,6 +1,11 @@
 import React from 'react';
 import './index.css';
 class Comment extends React.Component {
+    // 在类组件构造函数中需要将props传递给super,这样可以在构造函数中拿到，否则无法拿到
+    constructor(props) {
+        super(props);
+        console.log(this.props, props);
+    }
     state = {
         person: '',
         content: '',
@@ -49,6 +54,7 @@ class Comment extends React.Component {
                 <textarea cols="30" rows="10" placeholder="请输入评论内容" name="content" value={this.state.content} onChange={this.handleChange}/><br />
                 <button onClick={this.handleAdd}>发表评论</button>
                 {this.handleShowComment()}
+                {this.props.name}
             </div>
         )
     }

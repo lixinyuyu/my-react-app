@@ -27,5 +27,8 @@ import ReactDom from 'react-dom';
 // ReactDom.render(<ClasshelloCom />, document.getElementById('root'));
 
 // import Hello from './hello.js';
-import Comment from './demo1-comment';
-ReactDom.render(<Comment />, document.getElementById('root'));
+// import Comment from './demo1-comment';
+// import Parent from './props';
+// import Parent from './context';
+import ValidCom from './valid';
+ReactDom.render(<ValidCom />, document.getElementById('root'));
