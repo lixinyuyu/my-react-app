@@ -19,7 +19,7 @@ class Parent extends React.Component {
         window.addEventListener('mousemove', this.handleMove)
     }
     componentWillUnmount() {
-        window.removeEventListener('mousemove');
+        window.removeEventListener('mousemove', this.handleMove);
     }
 }
 Parent.propTypes = {

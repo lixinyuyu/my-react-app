@@ -27,7 +27,7 @@ function withHoc(WrappedComponent) {
 class Mouse extends React.Component {
     render() {
         return (
-            <p>{this.props.x}----{this.props.y}</p>
+            <p className="add-text">{this.props.x}----{this.props.y}</p>
         );
     }
 }
